@@ -36,3 +36,7 @@ Any message containing `!askrobot` will trigger the script. It sends the message
 - It first takes the most recent messages in a discord server as they come in and sends them to the flask app.
 - The flask app then takes that input and handles it to your local LLM.
 - It then sends a post request to the discord channel with the response.
+
+## 🐛🪲 Bugs
+
+Sometimes discord will respond with a 400 error code due to the formatting of the response. 
